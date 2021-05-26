@@ -1,0 +1,10 @@
+---
+- name: This playbook create files
+  hosts: all
+  #  become: True
+  #  gather_facts: no
+  tasks:
+  - name: Creating file
+    file:
+      path: /home/ansadmin/dir1
+      state: directory
